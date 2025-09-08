@@ -1,7 +1,7 @@
 # do sim.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:44:39 on Sep 08,2025
+# Start time: 15:16:31 on Sep 08,2025
 # vcom -reportprogress 300 -93 -work work ../../src/full_adder_single_bit_beh.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -9,25 +9,35 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity full_adder_single_bit_beh
 # -- Compiling architecture beh of full_adder_single_bit_beh
-# End time: 14:44:39 on Sep 08,2025, Elapsed time: 0:00:00
+# End time: 15:16:31 on Sep 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:44:39 on Sep 08,2025
+# Start time: 15:16:31 on Sep 08,2025
 # vcom -reportprogress 300 -93 -work work ../src/full_adder_single_bit_beh_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity full_adder_single_bit_beh_tb
 # -- Compiling architecture arch of full_adder_single_bit_beh_tb
-# End time: 14:44:39 on Sep 08,2025, Elapsed time: 0:00:00
+# -- Loading package NUMERIC_STD
+# -- Loading entity full_adder_single_bit_beh
+# End time: 15:16:31 on Sep 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" full_adder_single_bit_beh_tb 
-# Start time: 14:44:40 on Sep 08,2025
+# Start time: 15:16:31 on Sep 08,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.full_adder_single_bit_beh_tb(arch)
 # Loading ieee.numeric_std(body)
+# Loading work.full_adder_single_bit_beh_tb(arch)
 # Loading work.full_adder_single_bit_beh(beh)
-# End time: 14:53:16 on Sep 08,2025, Elapsed time: 0:08:36
-# Errors: 0, Warnings: 0
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: a9284  Hostname: DESKTOP-ABETS8U  ProcessID: 21452
+#           Attempting to use alternate WLF file "./wlft48msij".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft48msij
+add wave -position end  sim:/full_adder_single_bit_beh_tb/x
+add wave -position end  sim:/full_adder_single_bit_beh_tb/y
+add wave -position end  sim:/full_adder_single_bit_beh_tb/cin
+add wave -position end  sim:/full_adder_single_bit_beh_tb/sum
+add wave -position end  sim:/full_adder_single_bit_beh_tb/cout

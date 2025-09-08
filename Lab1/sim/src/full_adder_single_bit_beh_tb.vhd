@@ -17,7 +17,7 @@ signal sum  : std_logic;
 signal cout : std_logic;
 
 begin 
-  uut: full_adder_single_bit_beh 
+  uut: entity work.full_adder_single_bit_beh 
     port map(
       a     => x,
       b     => y,
@@ -26,7 +26,7 @@ begin
       cout  => cout
     );
     
-  a <= not a after 10 ns;
-  b <= not b after 20 ns;
+  x <= not x after 10 ns;
+  y <= not y after 20 ns;
   cin <= not cin after 40 ns;
 end arch;

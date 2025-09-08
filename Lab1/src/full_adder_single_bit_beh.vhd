@@ -22,13 +22,17 @@ signal x   : std_logic;
 signal y   : std_logic;
 
 begin
-  process_xy : process(a, b)
+  process_x : process(a)
   begin
     x <= a;
-    y <= b;
-  end process_xy
+  end process process_x;
 
-  sum <= (x xor b) xor cin;
+  process_y : process(b)
+  begin
+    y <= b;
+  end process process_y;
+
+  sum <= (x xor y) xor cin;
   cout <= (x and y) or (x and cin) or (y and cin);
 
 end beh; 
