@@ -8,10 +8,10 @@ b[1] => _.DATAC
 b[2] => _.DATAC
 b[3] => _.DATAC
 cin => _.DATAB
-sum[0] <= _.SUM_OUT
-sum[1] <= _.SUM_OUT
-sum[2] <= _.SUM_OUT
-sum[3] <= _.SUM_OUT
-cout <= _.SUM_OUT
+sum[0] << _.SUM_OUT
+sum[1] << _.SUM_OUT
+sum[2] << _.SUM_OUT
+sum[3] << _.SUM_OUT
+cout << _.SUM_OUT
 
 

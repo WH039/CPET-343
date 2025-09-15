@@ -21,9 +21,9 @@ ViAheATI5okmNF;[dMG5O00
 !s100 BEEX<>@;>^5C8<PhO2hHm1
 Z7 OV;C;10.5b;63
 31
-Z8 !s110 1757963039
+Z8 !s110 1757964058
 !i10b 1
-Z9 !s108 1757963038.000000
+Z9 !s108 1757964058.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|../../src/full_adder_single_bit_arch/src/full_adder_single_bit_arch.vhd|
 Z11 !s107 ../../src/full_adder_single_bit_arch/src/full_adder_single_bit_arch.vhd|
 !i113 1
@@ -63,9 +63,9 @@ R7
 31
 R8
 !i10b 1
-Z18 !s108 1757963039.000000
-Z19 !s90 -reportprogress|300|-93|-work|work|../../src/generic_adder_arch.vhd|
-Z20 !s107 ../../src/generic_adder_arch.vhd|
+R9
+Z18 !s90 -reportprogress|300|-93|-work|work|../../src/generic_adder_arch.vhd|
+Z19 !s107 ../../src/generic_adder_arch.vhd|
 !i113 1
 R12
 R13
@@ -82,31 +82,31 @@ R7
 31
 R8
 !i10b 1
+R9
 R18
 R19
-R20
 !i113 1
 R12
 R13
 Egeneric_adder_beh
-Z21 w1757945693
+Z20 w1757945693
 R15
 R2
 R3
 R0
-Z22 8../../src/generic_adder_beh.vhd
-Z23 F../../src/generic_adder_beh.vhd
+Z21 8../../src/generic_adder_beh.vhd
+Z22 F../../src/generic_adder_beh.vhd
 l0
 L9
 VZM:m22W6n_OU0[flII;@<2
 !s100 OOaH7j]OJo2FNLlk`2n1j2
 R7
 31
-Z24 !s110 1757961460
+Z23 !s110 1757961460
 !i10b 1
-Z25 !s108 1757961460.000000
-Z26 !s90 -reportprogress|300|-93|-work|work|../../src/generic_adder_beh.vhd|
-Z27 !s107 ../../src/generic_adder_beh.vhd|
+Z24 !s108 1757961460.000000
+Z25 !s90 -reportprogress|300|-93|-work|work|../../src/generic_adder_beh.vhd|
+Z26 !s107 ../../src/generic_adder_beh.vhd|
 !i113 1
 R12
 R13
@@ -121,23 +121,23 @@ VXiACzM[7Kd];V;iL`X2`K1
 !s100 J0QDzX5NX;aLCSO9EOMGC0
 R7
 31
-R24
+R23
 !i10b 1
+R24
 R25
 R26
-R27
 !i113 1
 R12
 R13
 Egeneric_adder_tb
-Z28 w1757961446
-Z29 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z27 w1757961446
+Z28 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
 R15
 R2
 R3
 R4
-Z30 8../src/generic_adder_arch_tb.vhd
-Z31 F../src/generic_adder_arch_tb.vhd
+Z29 8../src/generic_adder_tb.vhd
+Z30 F../src/generic_adder_tb.vhd
 l0
 L10
 Ve9?:`H@Q`7ea6f0VdBTc93
@@ -146,29 +146,29 @@ R7
 31
 R8
 !i10b 1
-R18
-Z32 !s90 -reportprogress|300|-93|-work|work|../src/generic_adder_arch_tb.vhd|
-Z33 !s107 ../src/generic_adder_arch_tb.vhd|
+R9
+Z31 !s90 -reportprogress|300|-93|-work|work|../src/generic_adder_tb.vhd|
+Z32 !s107 ../src/generic_adder_tb.vhd|
 !i113 1
 R12
 R13
 Aarch
-R29
+R28
 R15
 R2
 R3
-Z34 DEx4 work 16 generic_adder_tb 0 22 e9?:`H@Q`7ea6f0VdBTc93
+Z33 DEx4 work 16 generic_adder_tb 0 22 e9?:`H@Q`7ea6f0VdBTc93
 l37
 L13
-Z35 VSPf18ij3;OM^B>=HPUDo:2
-Z36 !s100 `hVfYGHn3=0kMUc:z=1X]0
+Z34 VSPf18ij3;OM^B>=HPUDo:2
+Z35 !s100 `hVfYGHn3=0kMUc:z=1X]0
 R7
 31
 R8
 !i10b 1
-R18
+R9
+R31
 R32
-R33
 !i113 1
 R12
 R13

@@ -1,5 +1,5 @@
 Analysis & Elaboration report for part3
-Mon Sep 15 14:41:18 2025
+Mon Sep 15 15:12:05 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -9,9 +9,8 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |generic_adder_beh
-  5. Analysis & Elaboration Settings
-  6. Analysis & Elaboration Messages
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
 
 
 
@@ -37,10 +36,10 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Sep 15 14:41:18 2025       ;
+; Analysis & Elaboration Status ; Failed - Mon Sep 15 15:12:05 2025           ;
 ; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                 ; part3                                       ;
-; Top-level Entity Name         ; generic_adder_beh                           ;
+; Top-level Entity Name         ; generic_adder_arch                          ;
 ; Family                        ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
 ; Total registers               ; N/A until Partition Merge                   ;
@@ -68,23 +67,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |generic_adder_beh ;
-+----------------+-------+----------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                     ;
-+----------------+-------+----------------------------------------------------------+
-; bits           ; 4     ; Signed Integer                                           ;
-+----------------+-------+----------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; generic_adder_beh  ; part3              ;
+; Top-level entity name                                                           ; generic_adder_arch ; part3              ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -171,19 +160,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Sep 15 14:41:10 2025
+    Info: Processing started: Mon Sep 15 15:11:58 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off part3 -c part3 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /users/a9284/documents/github/cpet-343/lab2/topost/generic_adder_arch/src/generic_adder_arch.vhd
+    Info (12022): Found design unit 1: generic_adder_arch-arch File: C:/Users/a9284/Documents/GitHub/CPET-343/Lab2/toPost/generic_adder_arch/src/generic_adder_arch.vhd Line: 22
+    Info (12023): Found entity 1: generic_adder_arch File: C:/Users/a9284/Documents/GitHub/CPET-343/Lab2/toPost/generic_adder_arch/src/generic_adder_arch.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file generic_adder_beh.vhd
     Info (12022): Found design unit 1: generic_adder_beh-beh File: C:/Users/a9284/Documents/GitHub/CPET-343/Lab2/toPost/generic_adder_beh/src/generic_adder_beh.vhd Line: 22
     Info (12023): Found entity 1: generic_adder_beh File: C:/Users/a9284/Documents/GitHub/CPET-343/Lab2/toPost/generic_adder_beh/src/generic_adder_beh.vhd Line: 9
-Info (12127): Elaborating entity "generic_adder_beh" for the top level hierarchy
-Warning (10540): VHDL Signal Declaration warning at generic_adder_beh.vhd(25): used explicit default value for signal "cin_guard" because signal was never assigned a value File: C:/Users/a9284/Documents/GitHub/CPET-343/Lab2/toPost/generic_adder_beh/src/generic_adder_beh.vhd Line: 25
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4848 megabytes
-    Info: Processing ended: Mon Sep 15 14:41:18 2025
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:15
+Info (12127): Elaborating entity "generic_adder_arch" for the top level hierarchy
+Error (12006): Node instance "\adders:0:full_adder" instantiates undefined entity "full_adder_single_bit_arch". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/a9284/Documents/GitHub/CPET-343/Lab2/toPost/generic_adder_arch/src/generic_adder_arch.vhd Line: 38
+Error (12006): Node instance "\adders:1:full_adder" instantiates undefined entity "full_adder_single_bit_arch". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/a9284/Documents/GitHub/CPET-343/Lab2/toPost/generic_adder_arch/src/generic_adder_arch.vhd Line: 38
+Error (12006): Node instance "\adders:2:full_adder" instantiates undefined entity "full_adder_single_bit_arch". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/a9284/Documents/GitHub/CPET-343/Lab2/toPost/generic_adder_arch/src/generic_adder_arch.vhd Line: 38
+Error (12006): Node instance "\adders:3:full_adder" instantiates undefined entity "full_adder_single_bit_arch". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/a9284/Documents/GitHub/CPET-343/Lab2/toPost/generic_adder_arch/src/generic_adder_arch.vhd Line: 38
+Error: Quartus Prime Analysis & Elaboration was unsuccessful. 4 errors, 1 warning
+    Error: Peak virtual memory: 4843 megabytes
+    Error: Processing ended: Mon Sep 15 15:12:05 2025
+    Error: Elapsed time: 00:00:07
+    Error: Total CPU time (on all processors): 00:00:14
 
 

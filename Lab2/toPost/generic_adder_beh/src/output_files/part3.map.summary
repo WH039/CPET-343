@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Mon Sep 15 14:41:18 2025
+Analysis & Elaboration Status : Failed - Mon Sep 15 15:12:05 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : part3
-Top-level Entity Name : generic_adder_beh
+Top-level Entity Name : generic_adder_arch
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
