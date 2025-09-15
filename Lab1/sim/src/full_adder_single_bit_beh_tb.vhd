@@ -10,7 +10,7 @@ end full_adder_single_bit_beh_tb;
 
 architecture arch of full_adder_single_bit_beh_tb is
 
-signal x    : std_logic := '0';
+signal x    : std_logic := '0'; 
 signal y    : std_logic := '0'; 
 signal cin  : std_logic := '0';
 signal sum  : std_logic;

@@ -18,18 +18,19 @@ end full_adder_single_bit_beh;
 
 architecture beh of full_adder_single_bit_beh is
 
+--new passby signals
 signal x   : std_logic;
 signal y   : std_logic;
 
 begin
   process_x : process(a)
   begin
-    x <= a;
+    x <= a; --passing a into x
   end process process_x;
 
   process_y : process(b)
   begin
-    y <= b;
+    y <= b; --passing b into y
   end process process_y;
 
   sum <= (x xor y) xor cin;

@@ -41,3 +41,5 @@ add wave -position end  sim:/full_adder_single_bit_beh_tb/y
 add wave -position end  sim:/full_adder_single_bit_beh_tb/cin
 add wave -position end  sim:/full_adder_single_bit_beh_tb/sum
 add wave -position end  sim:/full_adder_single_bit_beh_tb/cout
+# End time: 15:20:40 on Sep 08,2025, Elapsed time: 0:04:09
+# Errors: 0, Warnings: 2
