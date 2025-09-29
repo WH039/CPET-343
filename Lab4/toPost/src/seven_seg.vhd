@@ -37,4 +37,4 @@ begin
             when others => seg <= "1111111"; -- off
         end case;
     end process;
-end architecture behavioral;
+end behavioral;

@@ -31,4 +31,4 @@ begin
     end process;
     
     output <= input_sync and not input_prev;
-end architecture behavioral;
+end behavioral;

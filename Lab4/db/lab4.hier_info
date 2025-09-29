@@ -1,0 +1,227 @@
+|add_sub
+clk => synchronizer_3bit:sync_a.clk
+clk => mode_reg.CLK
+clk => synchronizer_3bit:sync_b.clk
+clk => rising_edge_synchronizer:add_edge.clk
+clk => rising_edge_synchronizer:sub_edge.clk
+reset => synchronizer_3bit:sync_a.reset
+reset => mode_reg.ACLR
+reset => synchronizer_3bit:sync_b.reset
+reset => rising_edge_synchronizer:add_edge.reset
+reset => rising_edge_synchronizer:sub_edge.reset
+a[0] => synchronizer_3bit:sync_a.async_in[0]
+a[1] => synchronizer_3bit:sync_a.async_in[1]
+a[2] => synchronizer_3bit:sync_a.async_in[2]
+b[0] => synchronizer_3bit:sync_b.async_in[0]
+b[1] => synchronizer_3bit:sync_b.async_in[1]
+b[2] => synchronizer_3bit:sync_b.async_in[2]
+add_btn => rising_edge_synchronizer:add_edge.input
+sub_btn => rising_edge_synchronizer:sub_edge.input
+a_bcd[0] <= seven_seg:seg_a.seg[0]
+a_bcd[1] <= seven_seg:seg_a.seg[1]
+a_bcd[2] <= seven_seg:seg_a.seg[2]
+a_bcd[3] <= seven_seg:seg_a.seg[3]
+a_bcd[4] <= seven_seg:seg_a.seg[4]
+a_bcd[5] <= seven_seg:seg_a.seg[5]
+a_bcd[6] <= seven_seg:seg_a.seg[6]
+b_bcd[0] <= seven_seg:seg_b.seg[0]
+b_bcd[1] <= seven_seg:seg_b.seg[1]
+b_bcd[2] <= seven_seg:seg_b.seg[2]
+b_bcd[3] <= seven_seg:seg_b.seg[3]
+b_bcd[4] <= seven_seg:seg_b.seg[4]
+b_bcd[5] <= seven_seg:seg_b.seg[5]
+b_bcd[6] <= seven_seg:seg_b.seg[6]
+result_bcd[0] <= seven_seg:seg_result.seg[0]
+result_bcd[1] <= seven_seg:seg_result.seg[1]
+result_bcd[2] <= seven_seg:seg_result.seg[2]
+result_bcd[3] <= seven_seg:seg_result.seg[3]
+result_bcd[4] <= seven_seg:seg_result.seg[4]
+result_bcd[5] <= seven_seg:seg_result.seg[5]
+result_bcd[6] <= seven_seg:seg_result.seg[6]
+
+
+|add_sub|synchronizer_3bit:sync_a
+clk => sync_reg[0].CLK
+clk => sync_reg[1].CLK
+clk => sync_reg[2].CLK
+reset => sync_reg[0].ACLR
+reset => sync_reg[1].ACLR
+reset => sync_reg[2].ACLR
+async_in[0] => sync_reg[0].DATAIN
+async_in[1] => sync_reg[1].DATAIN
+async_in[2] => sync_reg[2].DATAIN
+sync_out[0] <= sync_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+sync_out[1] <= sync_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+sync_out[2] <= sync_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub|synchronizer_3bit:sync_b
+clk => sync_reg[0].CLK
+clk => sync_reg[1].CLK
+clk => sync_reg[2].CLK
+reset => sync_reg[0].ACLR
+reset => sync_reg[1].ACLR
+reset => sync_reg[2].ACLR
+async_in[0] => sync_reg[0].DATAIN
+async_in[1] => sync_reg[1].DATAIN
+async_in[2] => sync_reg[2].DATAIN
+sync_out[0] <= sync_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+sync_out[1] <= sync_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+sync_out[2] <= sync_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub|rising_edge_synchronizer:add_edge
+clk => input_prev.CLK
+clk => input_sync.CLK
+reset => input_prev.ACLR
+reset => input_sync.ACLR
+input => input_sync.DATAIN
+output <= output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub|rising_edge_synchronizer:sub_edge
+clk => input_prev.CLK
+clk => input_sync.CLK
+reset => input_prev.ACLR
+reset => input_sync.ACLR
+input => input_sync.DATAIN
+output <= output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub|generic_add_sub:add_sub_unit
+a[0] => Add0.IN3
+a[0] => Add1.IN6
+a[1] => Add0.IN2
+a[1] => Add1.IN5
+a[2] => Add0.IN1
+a[2] => Add1.IN4
+b[0] => Add0.IN6
+b[0] => Add1.IN3
+b[1] => Add0.IN5
+b[1] => Add1.IN2
+b[2] => Add0.IN4
+b[2] => Add1.IN1
+flag => c.OUTPUTSELECT
+flag => c.OUTPUTSELECT
+flag => c.OUTPUTSELECT
+flag => c.OUTPUTSELECT
+c[0] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub|seven_seg:seg_a
+binary[0] => Mux0.IN19
+binary[0] => Mux1.IN19
+binary[0] => Mux2.IN19
+binary[0] => Mux3.IN19
+binary[0] => Mux4.IN19
+binary[0] => Mux5.IN19
+binary[0] => Mux6.IN19
+binary[1] => Mux0.IN18
+binary[1] => Mux1.IN18
+binary[1] => Mux2.IN18
+binary[1] => Mux3.IN18
+binary[1] => Mux4.IN18
+binary[1] => Mux5.IN18
+binary[1] => Mux6.IN18
+binary[2] => Mux0.IN17
+binary[2] => Mux1.IN17
+binary[2] => Mux2.IN17
+binary[2] => Mux3.IN17
+binary[2] => Mux4.IN17
+binary[2] => Mux5.IN17
+binary[2] => Mux6.IN17
+binary[3] => Mux0.IN16
+binary[3] => Mux1.IN16
+binary[3] => Mux2.IN16
+binary[3] => Mux3.IN16
+binary[3] => Mux4.IN16
+binary[3] => Mux5.IN16
+binary[3] => Mux6.IN16
+seg[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub|seven_seg:seg_b
+binary[0] => Mux0.IN19
+binary[0] => Mux1.IN19
+binary[0] => Mux2.IN19
+binary[0] => Mux3.IN19
+binary[0] => Mux4.IN19
+binary[0] => Mux5.IN19
+binary[0] => Mux6.IN19
+binary[1] => Mux0.IN18
+binary[1] => Mux1.IN18
+binary[1] => Mux2.IN18
+binary[1] => Mux3.IN18
+binary[1] => Mux4.IN18
+binary[1] => Mux5.IN18
+binary[1] => Mux6.IN18
+binary[2] => Mux0.IN17
+binary[2] => Mux1.IN17
+binary[2] => Mux2.IN17
+binary[2] => Mux3.IN17
+binary[2] => Mux4.IN17
+binary[2] => Mux5.IN17
+binary[2] => Mux6.IN17
+binary[3] => Mux0.IN16
+binary[3] => Mux1.IN16
+binary[3] => Mux2.IN16
+binary[3] => Mux3.IN16
+binary[3] => Mux4.IN16
+binary[3] => Mux5.IN16
+binary[3] => Mux6.IN16
+seg[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_sub|seven_seg:seg_result
+binary[0] => Mux0.IN19
+binary[0] => Mux1.IN19
+binary[0] => Mux2.IN19
+binary[0] => Mux3.IN19
+binary[0] => Mux4.IN19
+binary[0] => Mux5.IN19
+binary[0] => Mux6.IN19
+binary[1] => Mux0.IN18
+binary[1] => Mux1.IN18
+binary[1] => Mux2.IN18
+binary[1] => Mux3.IN18
+binary[1] => Mux4.IN18
+binary[1] => Mux5.IN18
+binary[1] => Mux6.IN18
+binary[2] => Mux0.IN17
+binary[2] => Mux1.IN17
+binary[2] => Mux2.IN17
+binary[2] => Mux3.IN17
+binary[2] => Mux4.IN17
+binary[2] => Mux5.IN17
+binary[2] => Mux6.IN17
+binary[3] => Mux0.IN16
+binary[3] => Mux1.IN16
+binary[3] => Mux2.IN16
+binary[3] => Mux3.IN16
+binary[3] => Mux4.IN16
+binary[3] => Mux5.IN16
+binary[3] => Mux6.IN16
+seg[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

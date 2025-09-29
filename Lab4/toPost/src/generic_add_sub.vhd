@@ -9,7 +9,7 @@ use ieee.numeric_std.all;
 
 entity generic_add_sub is
    generic(
-    bits     : interger := 3
+    bits     : integer := 3
    );
    port (
     a     : in std_logic_vector(bits-1 downto 0);
@@ -29,4 +29,4 @@ begin
     sub_sig <= std_logic_vector(unsigned('0' & a) - unsigned('0' & b));
     c <= add_sig when flag = '0' else sub_sig;
     
-end architecture beh;
+end beh;

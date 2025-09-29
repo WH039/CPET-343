@@ -28,4 +28,4 @@ begin
     end process;
     
     sync_out <= sync_reg;
-end architecture behavioral;
+end behavioral;

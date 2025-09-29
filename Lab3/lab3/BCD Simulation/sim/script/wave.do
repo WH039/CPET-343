@@ -15,10 +15,16 @@ radix define States {
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /seven_seg_top_tb/uut/CLK
 add wave -noupdate /seven_seg_top_tb/uut/RESET
-add wave -noupdate -radix States /seven_seg_top_tb/uut/seg_display
 add wave -noupdate /seven_seg_top_tb/uut/s_enable
 add wave -noupdate -radix unsigned /seven_seg_top_tb/uut/s_sum
 add wave -noupdate -radix unsigned /seven_seg_top_tb/uut/s_sum_sig
+add wave -noupdate /seven_seg_top_tb/uut/CLK
+add wave -noupdate /seven_seg_top_tb/uut/RESET
+add wave -noupdate /seven_seg_top_tb/uut/ADD
+add wave -noupdate /seven_seg_top_tb/uut/seven_seg_out
+add wave -noupdate /seven_seg_top_tb/uut/s_sum_sig
+add wave -noupdate /seven_seg_top_tb/uut/s_enable
+add wave -noupdate /seven_seg_top_tb/uut/s_sum
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {192821 ps} 0}
 quietly wave cursor active 1

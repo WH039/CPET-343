@@ -13,14 +13,26 @@ radix define States {
     -default default
 }
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /seven_seg_top_tb/uut/CLK
-add wave -noupdate /seven_seg_top_tb/uut/RESET
-add wave -noupdate -radix States /seven_seg_top_tb/uut/seg_display
-add wave -noupdate /seven_seg_top_tb/uut/s_enable
-add wave -noupdate -radix unsigned /seven_seg_top_tb/uut/s_sum
-add wave -noupdate -radix unsigned /seven_seg_top_tb/uut/s_sum_sig
+add wave -noupdate /add_sub_tb/uut/clk
+add wave -noupdate /add_sub_tb/uut/reset
+add wave -noupdate /add_sub_tb/uut/a
+add wave -noupdate /add_sub_tb/uut/b
+add wave -noupdate /add_sub_tb/uut/add_btn
+add wave -noupdate /add_sub_tb/uut/sub_btn
+add wave -noupdate /add_sub_tb/uut/a_bcd
+add wave -noupdate /add_sub_tb/uut/b_bcd
+add wave -noupdate /add_sub_tb/uut/result_bcd
+add wave -noupdate /add_sub_tb/uut/a_sync
+add wave -noupdate /add_sub_tb/uut/b_sync
+add wave -noupdate /add_sub_tb/uut/add_btn_edge
+add wave -noupdate /add_sub_tb/uut/sub_btn_edge
+add wave -noupdate /add_sub_tb/uut/mode
+add wave -noupdate /add_sub_tb/uut/result
+add wave -noupdate /add_sub_tb/uut/a_display
+add wave -noupdate /add_sub_tb/uut/b_display
+add wave -noupdate /add_sub_tb/uut/mode_reg
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {192821 ps} 0}
+WaveRestoreCursors {{Cursor 1} {129522 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 177
 configure wave -valuecolwidth 40

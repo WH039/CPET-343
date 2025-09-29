@@ -40,6 +40,8 @@ architecture top of add_sub is
     signal mode_reg : std_logic;
     
 begin
+
+    
     -- Input synchronizers
     sync_a : entity work.synchronizer_3bit
         port map (
@@ -74,26 +76,10 @@ begin
             output => sub_btn_edge
         );
     
-    -- Mode selection process
-    process(clk, reset)
-    begin
-        if reset = '1' then
-            mode_reg <= '0'; -- Default to add mode
-        elsif rising_edge(clk) then
-            if add_btn_edge = '1' then
-                mode_reg <= '0'; -- Add mode
-            elsif sub_btn_edge = '1' then
-                mode_reg <= '1'; -- Subtract mode
-            end if;
-        end if;
-    end process;
-    
-    mode <= mode_reg;
-    
     -- Add/Subtract unit
     add_sub_unit : entity work.generic_add_sub
         generic map (
-            WIDTH => 3
+            bits => 3
         )
         port map (
             a => a_sync,
@@ -106,20 +92,35 @@ begin
     a_display <= '0' & a_sync;
     b_display <= '0' & b_sync;
     
+    -- Mode selection process
+    modes : process(clk, reset)
+    begin
+        if reset = '1' then
+            mode_reg <= '0'; -- Default to add mode
+        elsif rising_edge(clk) then
+            if add_btn_edge = '1' then
+                mode_reg <= '0'; -- Add mode
+            elsif sub_btn_edge = '1' then
+                mode_reg <= '1'; -- Subtract mode
+            end if;
+        end if;
+    end process modes;
+    mode <= mode_reg;
+
     -- Seven segment displays
-    seg_a: entity work.seven_seg
+    seg_a : entity work.seven_seg
         port map (
             binary => a_display,
             seg => a_bcd
         );
         
-    seg_b: entity work.seven_seg
+    seg_b : entity work.seven_seg
         port map (
             binary => b_display,
             seg => b_bcd
         );
         
-    seg_result: entity work.seven_seg
+    seg_result : entity work.seven_seg
         port map (
             binary => result,
             seg => result_bcd
