@@ -22,9 +22,9 @@ Vn048aQFkI=OV=YF^6d42O0
 !s100 On7lj:UBQ[L_OX]zFGUPn0
 Z7 OV;C;10.5b;63
 33
-Z8 !s110 1759171011
+Z8 !s110 1759171552
 !i10b 1
-Z9 !s108 1759171011.000000
+Z9 !s108 1759171552.000000
 Z10 !s90 -reportprogress|300|-2008|-work|work|../../src/add_sub.vhd|
 Z11 !s107 ../../src/add_sub.vhd|
 !i113 1
@@ -100,11 +100,11 @@ R18
 R2
 R3
 R4
-DEx4 work 10 add_sub_tb 0 22 _zYW:2:Lo@VK]HEI:R@N03
+Z26 DEx4 work 10 add_sub_tb 0 22 _zYW:2:Lo@VK]HEI:R@N03
 l22
 L12
-V>e1k5geej<AEkT2Pknnh72
-!s100 >02l]UdhQ=b7KZ4Gm_M<n1
+Z27 V>e1k5geej<AEkT2Pknnh72
+Z28 !s100 >02l]UdhQ=b7KZ4Gm_M<n1
 R7
 33
 R8
@@ -137,12 +137,12 @@ R12
 R13
 w1759167103
 Eedge_detector
-Z26 w1759155803
+Z29 w1759155803
 R3
 R4
 R0
-Z27 8../../src/edge_detect.vhd
-Z28 F../../src/edge_detect.vhd
+Z30 8../../src/edge_detect.vhd
+Z31 F../../src/edge_detect.vhd
 l0
 L9
 Vl8kdC2:g?bW9bIiB>5@A<1
@@ -152,8 +152,8 @@ R7
 R19
 !i10b 1
 R20
-Z29 !s90 -reportprogress|300|-2008|-work|work|../../src/edge_detect.vhd|
-Z30 !s107 ../../src/edge_detect.vhd|
+Z32 !s90 -reportprogress|300|-2008|-work|work|../../src/edge_detect.vhd|
+Z33 !s107 ../../src/edge_detect.vhd|
 !i113 1
 R12
 R13
@@ -170,19 +170,19 @@ R7
 R19
 !i10b 1
 R20
-R29
-R30
+R32
+R33
 !i113 1
 R12
 R13
 Egeneric_add_sub
-Z31 w1759169785
+Z34 w1759169785
 R2
 R3
 R4
 R0
-Z32 8../../src/generic_add_sub.vhd
-Z33 F../../src/generic_add_sub.vhd
+Z35 8../../src/generic_add_sub.vhd
+Z36 F../../src/generic_add_sub.vhd
 l0
 L10
 Vbc`YGKRlPei@9aJg`nzIb3
@@ -192,8 +192,8 @@ R7
 R8
 !i10b 1
 R9
-Z34 !s90 -reportprogress|300|-2008|-work|work|../../src/generic_add_sub.vhd|
-Z35 !s107 ../../src/generic_add_sub.vhd|
+Z37 !s90 -reportprogress|300|-2008|-work|work|../../src/generic_add_sub.vhd|
+Z38 !s107 ../../src/generic_add_sub.vhd|
 !i113 1
 R12
 R13
@@ -211,18 +211,18 @@ R7
 R8
 !i10b 1
 R9
-R34
-R35
+R37
+R38
 !i113 1
 R12
 R13
 Ehex_to_7seg
-Z36 w1759155873
+Z39 w1759155873
 R3
 R4
 R0
-Z37 8../../src/seven_seg.vhd
-Z38 F../../src/seven_seg.vhd
+Z40 8../../src/seven_seg.vhd
+Z41 F../../src/seven_seg.vhd
 l0
 L9
 VZ`QkzW7JVAZad<c?8<J>a3
@@ -232,8 +232,8 @@ R7
 R19
 !i10b 1
 R20
-Z39 !s90 -reportprogress|300|-2008|-work|work|../../src/seven_seg.vhd|
-Z40 !s107 ../../src/seven_seg.vhd|
+Z42 !s90 -reportprogress|300|-2008|-work|work|../../src/seven_seg.vhd|
+Z43 !s107 ../../src/seven_seg.vhd|
 !i113 1
 R12
 R13
@@ -250,8 +250,8 @@ R7
 R19
 !i10b 1
 R20
-R39
-R40
+R42
+R43
 !i113 1
 R12
 R13
@@ -278,12 +278,12 @@ R25
 R12
 R13
 Erising_edge_synchronizer
-Z41 w1759164652
+Z44 w1759164652
 R3
 R4
 R0
-Z42 8../../src/rising_edge_synchronizer.vhd
-Z43 F../../src/rising_edge_synchronizer.vhd
+Z45 8../../src/rising_edge_synchronizer.vhd
+Z46 F../../src/rising_edge_synchronizer.vhd
 l0
 L9
 VdC>=h`[>X?ldbdLgEXU>m1
@@ -293,8 +293,8 @@ R7
 R8
 !i10b 1
 R9
-Z44 !s90 -reportprogress|300|-2008|-work|work|../../src/rising_edge_synchronizer.vhd|
-Z45 !s107 ../../src/rising_edge_synchronizer.vhd|
+Z47 !s90 -reportprogress|300|-2008|-work|work|../../src/rising_edge_synchronizer.vhd|
+Z48 !s107 ../../src/rising_edge_synchronizer.vhd|
 !i113 1
 R12
 R13
@@ -311,18 +311,18 @@ R7
 R8
 !i10b 1
 R9
-R44
-R45
+R47
+R48
 !i113 1
 R12
 R13
 Eseven_seg
-Z46 w1759164021
+Z49 w1759164021
 R3
 R4
 R0
-R37
-R38
+R40
+R41
 l0
 L9
 VELFkLCC;]omPHokg=7WgC0
@@ -332,8 +332,8 @@ R7
 R8
 !i10b 1
 R9
-R39
-R40
+R42
+R43
 !i113 1
 R12
 R13
@@ -350,18 +350,18 @@ R7
 R8
 !i10b 1
 R9
-R39
-R40
+R42
+R43
 !i113 1
 R12
 R13
 Esync
-Z47 w1759155808
+Z50 w1759155808
 R3
 R4
 R0
-Z48 8../../src/sync.vhd
-Z49 F../../src/sync.vhd
+Z51 8../../src/sync.vhd
+Z52 F../../src/sync.vhd
 l0
 L9
 VAAR?MdJPn:]^1amoe]RI?3
@@ -371,8 +371,8 @@ R7
 R19
 !i10b 1
 R20
-Z50 !s90 -reportprogress|300|-2008|-work|work|../../src/sync.vhd|
-Z51 !s107 ../../src/sync.vhd|
+Z53 !s90 -reportprogress|300|-2008|-work|work|../../src/sync.vhd|
+Z54 !s107 ../../src/sync.vhd|
 !i113 1
 R12
 R13
@@ -389,18 +389,18 @@ R7
 R19
 !i10b 1
 R20
-R50
-R51
+R53
+R54
 !i113 1
 R12
 R13
 Esynchronizer_3bit
-Z52 w1759164024
+Z55 w1759164024
 R3
 R4
 R0
-Z53 8../../src/synchronizer_3bit.vhd
-Z54 F../../src/synchronizer_3bit.vhd
+Z56 8../../src/synchronizer_3bit.vhd
+Z57 F../../src/synchronizer_3bit.vhd
 l0
 L9
 VU7;83[C?Sca<mA@ZNSiH13
@@ -410,8 +410,8 @@ R7
 R8
 !i10b 1
 R9
-Z55 !s90 -reportprogress|300|-2008|-work|work|../../src/synchronizer_3bit.vhd|
-Z56 !s107 ../../src/synchronizer_3bit.vhd|
+Z58 !s90 -reportprogress|300|-2008|-work|work|../../src/synchronizer_3bit.vhd|
+Z59 !s107 ../../src/synchronizer_3bit.vhd|
 !i113 1
 R12
 R13
@@ -428,8 +428,8 @@ R7
 R8
 !i10b 1
 R9
-R55
-R56
+R58
+R59
 !i113 1
 R12
 R13
@@ -439,8 +439,8 @@ R2
 R3
 R4
 R0
-Z57 8../src/top_add_sub_tb.vhd
-Z58 F../src/top_add_sub_tb.vhd
+Z60 8../src/top_add_sub_tb.vhd
+Z61 F../src/top_add_sub_tb.vhd
 l0
 L5
 V?E?X^jBLF`lSgijElTQU`3
@@ -450,13 +450,13 @@ R7
 !s110 1759156345
 !i10b 1
 !s108 1759156345.000000
-Z59 !s90 -reportprogress|300|-2008|-work|work|../src/top_add_sub_tb.vhd|
-Z60 !s107 ../src/top_add_sub_tb.vhd|
+Z62 !s90 -reportprogress|300|-2008|-work|work|../src/top_add_sub_tb.vhd|
+Z63 !s107 ../src/top_add_sub_tb.vhd|
 !i113 1
 R12
 R13
 Abehavior
-Z61 w1759156389
+Z64 w1759156389
 R2
 R3
 R4
@@ -470,18 +470,18 @@ R7
 R19
 !i10b 1
 R20
-R59
-R60
+R62
+R63
 !i113 1
 R12
 R13
 Etop
-Z62 w1759155924
+Z65 w1759155924
 R3
 R4
 R0
-Z63 8../../src/top.vhd
-Z64 F../../src/top.vhd
+Z66 8../../src/top.vhd
+Z67 F../../src/top.vhd
 l0
 L9
 V7XUQooI<GH0EkQzES8ZQQ0
@@ -491,8 +491,8 @@ R7
 R19
 !i10b 1
 R20
-Z65 !s90 -reportprogress|300|-2008|-work|work|../../src/top.vhd|
-Z66 !s107 ../../src/top.vhd|
+Z68 !s90 -reportprogress|300|-2008|-work|work|../../src/top.vhd|
+Z69 !s107 ../../src/top.vhd|
 !i113 1
 R12
 R13
@@ -509,19 +509,19 @@ R7
 R19
 !i10b 1
 R20
-R65
-R66
+R68
+R69
 !i113 1
 R12
 R13
 Etop_add_sub_tb
-R61
+R64
 R2
 R3
 R4
 R0
-R57
-R58
+R60
+R61
 l0
 L5
 V3anZ]6OYT?=BE3I92^AnW2
@@ -531,8 +531,8 @@ R7
 R19
 !i10b 1
 R20
-R59
-R60
+R62
+R63
 !i113 1
 R12
 R13

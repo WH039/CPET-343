@@ -10,6 +10,12 @@ radix define States {
     "7'b1111000" "7" -color "red",
     "7'b0000000" "8" -color "red",
     "7'b0011000" "9" -color "red",
+    "7'b0001000" "A" -color "red",
+    "7'b0000011" "b" -color "red",
+    "7'b1000110" "C" -color "red",
+    "7'b0100001" "d" -color "red",
+    "7'b0000110" "E" -color "red",
+    "7'b0001110" "F" -color "red",
     -default default
 }
 quietly WaveActivateNextPane {} 0
