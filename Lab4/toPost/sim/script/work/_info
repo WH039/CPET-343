@@ -1,0 +1,272 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/a9284/Documents/GitHub/CPET-343/Lab4/toPost/sim/script
+Eadd_sub
+w1759160194
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8../../src/add_sub.vhd
+Z5 F../../src/add_sub.vhd
+l0
+L10
+Vn048aQFkI=OV=YF^6d42O0
+!s100 On7lj:UBQ[L_OX]zFGUPn0
+Z6 OV;C;10.5b;63
+33
+!s110 1759160393
+!i10b 1
+!s108 1759160393.000000
+Z7 !s90 -reportprogress|300|-2008|-work|work|../../src/add_sub.vhd|
+!s107 ../../src/add_sub.vhd|
+!i113 1
+Z8 o-2008 -work work
+Z9 tExplicit 1 CvgOpt 0
+Abehavior
+R1
+R2
+R3
+DEx4 work 7 add_sub 0 22 oH<djSa=QCc_D^e?T2o=E1
+l20
+L15
+Vhog_R9UBdO1USm_FLA6Pk0
+!s100 fCzYX0fB2Ec?Oz`eAIz8e0
+R6
+33
+Z10 !s110 1759156401
+!i10b 1
+Z11 !s108 1759156401.000000
+R7
+!s107 ../../src/add_sub.vhd|
+!i113 1
+R8
+R9
+w1759156331
+Eedge_detector
+Z12 w1759155803
+R2
+R3
+R0
+Z13 8../../src/edge_detect.vhd
+Z14 F../../src/edge_detect.vhd
+l0
+L9
+Vl8kdC2:g?bW9bIiB>5@A<1
+!s100 7;1m[KjMk?KUZP[RX?>Yk2
+R6
+33
+R10
+!i10b 1
+R11
+Z15 !s90 -reportprogress|300|-2008|-work|work|../../src/edge_detect.vhd|
+Z16 !s107 ../../src/edge_detect.vhd|
+!i113 1
+R8
+R9
+Abehavior
+R2
+R3
+DEx4 work 13 edge_detector 0 22 l8kdC2:g?bW9bIiB>5@A<1
+l19
+L17
+VY49hRbPPh`h2oIZWXlAZA1
+!s100 mLhmGejWbzn;n7RG]X?O91
+R6
+33
+R10
+!i10b 1
+R11
+R15
+R16
+!i113 1
+R8
+R9
+Ehex_to_7seg
+Z17 w1759155873
+R2
+R3
+R0
+Z18 8../../src/seven_seg.vhd
+Z19 F../../src/seven_seg.vhd
+l0
+L9
+VZ`QkzW7JVAZad<c?8<J>a3
+!s100 cj]U:]hR5PfcI?E6]k]kh2
+R6
+33
+R10
+!i10b 1
+R11
+Z20 !s90 -reportprogress|300|-2008|-work|work|../../src/seven_seg.vhd|
+Z21 !s107 ../../src/seven_seg.vhd|
+!i113 1
+R8
+R9
+Abehavior
+R2
+R3
+DEx4 work 11 hex_to_7seg 0 22 Z`QkzW7JVAZad<c?8<J>a3
+l17
+L16
+V;K`9dfeL1b385;oE0hUZc3
+!s100 75VD5GM6SiiMB@X6_2:TB2
+R6
+33
+R10
+!i10b 1
+R11
+R20
+R21
+!i113 1
+R8
+R9
+Esync
+Z22 w1759155808
+R2
+R3
+R0
+Z23 8../../src/sync.vhd
+Z24 F../../src/sync.vhd
+l0
+L9
+VAAR?MdJPn:]^1amoe]RI?3
+!s100 QXjz@[UR[`EjQHh6Gi=Oi1
+R6
+33
+R10
+!i10b 1
+R11
+Z25 !s90 -reportprogress|300|-2008|-work|work|../../src/sync.vhd|
+Z26 !s107 ../../src/sync.vhd|
+!i113 1
+R8
+R9
+Abehavior
+R2
+R3
+DEx4 work 4 sync 0 22 AAR?MdJPn:]^1amoe]RI?3
+l19
+L17
+VTHnMgESbTBhC17^T1<nH70
+!s100 3?Z:Z_kXH^5?1`HbK]^eL0
+R6
+33
+R10
+!i10b 1
+R11
+R25
+R26
+!i113 1
+R8
+R9
+Etb_add_sub
+w1759155970
+R1
+R2
+R3
+R0
+Z27 8../src/top_add_sub_tb.vhd
+Z28 F../src/top_add_sub_tb.vhd
+l0
+L5
+V?E?X^jBLF`lSgijElTQU`3
+!s100 ?SH93zeY?nWRVaIgAgLi@2
+R6
+33
+!s110 1759156345
+!i10b 1
+!s108 1759156345.000000
+Z29 !s90 -reportprogress|300|-2008|-work|work|../src/top_add_sub_tb.vhd|
+Z30 !s107 ../src/top_add_sub_tb.vhd|
+!i113 1
+R8
+R9
+Abehavior
+Z31 w1759156389
+R1
+R2
+R3
+DEx4 work 10 tb_add_sub 0 22 ?E?X^jBLF`lSgijElTQU`3
+l27
+L8
+VSLX17UE9U8@9o_gd8LoYB0
+!s100 IPk`25n7NM1<3NLXX81002
+R6
+33
+R10
+!i10b 1
+R11
+R29
+R30
+!i113 1
+R8
+R9
+Etop
+Z32 w1759155924
+R2
+R3
+R0
+Z33 8../../src/top.vhd
+Z34 F../../src/top.vhd
+l0
+L9
+V7XUQooI<GH0EkQzES8ZQQ0
+!s100 NM:AdzA[[IYfHDJ9gUPa_1
+R6
+33
+R10
+!i10b 1
+R11
+Z35 !s90 -reportprogress|300|-2008|-work|work|../../src/top.vhd|
+Z36 !s107 ../../src/top.vhd|
+!i113 1
+R8
+R9
+Abehavior
+R2
+R3
+DEx4 work 3 top 0 22 7XUQooI<GH0EkQzES8ZQQ0
+l62
+L20
+VLcmQFfm<Fh]HO9=n>4UC<2
+!s100 aV0g@=R=7l>J2^1=RG3O72
+R6
+33
+R10
+!i10b 1
+R11
+R35
+R36
+!i113 1
+R8
+R9
+Etop_add_sub_tb
+R31
+R1
+R2
+R3
+R0
+R27
+R28
+l0
+L5
+V3anZ]6OYT?=BE3I92^AnW2
+!s100 okZ`R3JzHcmIUz>DX3hBd0
+R6
+33
+R10
+!i10b 1
+R11
+R29
+R30
+!i113 1
+R8
+R9

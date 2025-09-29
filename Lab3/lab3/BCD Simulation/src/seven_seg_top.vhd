@@ -1,0 +1,77 @@
+-------------------------------------------------------------------------------
+-- Weicheng Huang
+-- Seven Segment Display
+-------------------------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;  
+use ieee.numeric_std.all;  
+
+
+entity seven_seg_top is
+    generic (
+        bits         : integer := 4;
+        max_count    : integer := 50000000
+    );
+    port (
+        CLK     : in std_logic;                          --! Clock
+        RESET   : in std_logic;                          --! Reset
+        ADD     : in std_logic_vector(bits-1 downto 0);  --!5Add for adder (will just be one for this)
+        seven_seg_out : out std_logic_vector(6 downto 0)       --! Seven segment Display
+    );
+end entity seven_seg_top;
+
+architecture top of seven_seg_top is
+
+    signal s_sum_sig : std_logic_vector(bits-1 downto 0); --! sum from top level process
+    signal s_enable  : std_logic;                         --! enable from counter
+    signal s_sum     : std_logic_Vector(bits-1 downto 0); --! sum from adder
+
+begin
+
+    sum_proc : process(CLK, RESET)
+    begin
+        if RESET = '1' then
+            s_sum_sig <= (others => '0');
+        elsif rising_edge(CLK) then
+            if s_enable = '1' then
+                s_sum_sig <= s_sum;
+            end if;
+        end if;
+    end process sum_proc;
+
+    adder : entity work.generic_adder_beh
+    generic map (
+        bits => bits
+    )
+    port map (
+    	a    => ADD,
+    	b    => s_sum_sig,
+    	cin  => '0',
+    	sum  => s_sum,
+    	cout => open
+    );
+
+    counter : entity work.generic_counter
+    generic map (
+        max_count => max_count
+    )
+    port map (
+    	CLK    => CLK,
+    	RESET  => RESET,
+    	output => s_enable
+    );
+
+    seg_display : entity work.seven_seg
+        generic map (
+        	bits => bits
+        )
+        port map(
+            CLK     => CLK,
+            RESET   => RESET,
+            BCD     => s_sum_sig,
+            seven_seg_out => seven_seg_out
+        );
+    
+
+end top;

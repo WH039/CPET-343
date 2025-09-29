@@ -1,0 +1,32 @@
+# do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:20:38 on Sep 22,2025
+# vcom -reportprogress 300 -93 -work work ../../src/blink.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity blink
+# -- Compiling architecture beh of blink
+# End time: 14:20:38 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:20:38 on Sep 22,2025
+# vcom -reportprogress 300 -93 -work work ../src/blink_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity blink_tb
+# -- Compiling architecture arch of blink_tb
+# ** Warning: ../src/blink_tb.vhd(25): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 14:20:38 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" blink_tb 
+# Start time: 14:20:38 on Sep 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.blink_tb(arch)
+# Loading work.blink(beh)
+# End time: 14:45:53 on Sep 22,2025, Elapsed time: 0:25:15
+# Errors: 0, Warnings: 0

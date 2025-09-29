@@ -1,0 +1,88 @@
+# do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:42:27 on Sep 22,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/generic_adder_beh.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity generic_adder_beh
+# -- Compiling architecture beh of generic_adder_beh
+# End time: 15:42:27 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:42:27 on Sep 22,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/generic_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity generic_counter
+# -- Compiling architecture beh of generic_counter
+# End time: 15:42:27 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:42:27 on Sep 22,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/seven_seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_seg
+# -- Compiling architecture behavioral of seven_seg
+# End time: 15:42:27 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:42:27 on Sep 22,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/seven_seg_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity seven_seg_top
+# -- Compiling architecture top of seven_seg_top
+# -- Loading entity generic_adder_beh
+# -- Loading entity generic_counter
+# -- Loading entity seven_seg
+# End time: 15:42:27 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:42:27 on Sep 22,2025
+# vcom -reportprogress 300 -2008 -work work ../src/seven_seg_top_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity seven_seg_top_tb
+# -- Compiling architecture arch of seven_seg_top_tb
+# ** Warning: ../src/seven_seg_top_tb.vhd(15): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# -- Loading entity seven_seg_top
+# End time: 15:42:27 on Sep 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" seven_seg_top_tb 
+# Start time: 15:42:28 on Sep 22,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.seven_seg_top_tb(arch)
+# Loading work.seven_seg_top(top)
+# Loading work.generic_adder_beh(beh)
+# Loading work.generic_counter(beh)
+# Loading work.seven_seg(behavioral)
+# ** Error: (vish-4014) No objects found matching '/seven_seg_top_tb/uut/seven_seg'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Note: ****************** sequential testbench start ****************
+#    Time: 0 ps  Iteration: 0  Instance: /seven_seg_top_tb
+# ** Note: ****************** sequential testbench stop ****************
+#    Time: 220 ns  Iteration: 0  Instance: /seven_seg_top_tb
+add wave -position 2 sim:/seven_seg_top_tb/uut/seg_display/*
+restart
+run -all
+# ** Note: ****************** sequential testbench start ****************
+#    Time: 0 ps  Iteration: 0  Instance: /seven_seg_top_tb
+# ** Note: ****************** sequential testbench stop ****************
+#    Time: 220 ns  Iteration: 0  Instance: /seven_seg_top_tb
+# Break key hit
+# Simulation stop requested.
+# End time: 16:30:57 on Sep 22,2025, Elapsed time: 0:48:29
+# Errors: 3, Warnings: 0

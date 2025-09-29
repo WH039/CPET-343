@@ -63,3 +63,5 @@
 #    Time: 0 ps  Iteration: 2  Instance: /generic_adder_tb
 # ** Note: ****************** sequential testbench stop ****************
 #    Time: 5130 ns  Iteration: 0  Region: /generic_adder_tb/sequential_stimuli
+# End time: 15:25:54 on Sep 15,2025, Elapsed time: 0:04:56
+# Errors: 2, Warnings: 6

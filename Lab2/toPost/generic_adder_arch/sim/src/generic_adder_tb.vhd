@@ -54,7 +54,7 @@ sequential_stimuli: if SEQUENTIAL_FLAG generate
       --cin <= '1';
       report "****************** sequential testbench start ****************";
       wait for 10 ns;   -- let all the initial conditions trickle through
-      for k in 0 to 1 loop
+      for k in 0 to 1 loop --cin 
         cin <= std_logic(to_unsigned(k, 1)(0));
         for i in 0 to ((2 ** NUM_BITS) - 1) loop
           a <= std_logic_vector(unsigned(a) + 1 );
