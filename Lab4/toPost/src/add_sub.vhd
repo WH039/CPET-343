@@ -21,7 +21,7 @@ entity add_sub is
     );
 end entity add_sub;
 
-architecture structural of add_sub is
+architecture top of add_sub is
     -- Synchronized signals
     signal a_sync : std_logic_vector(2 downto 0);
     signal b_sync : std_logic_vector(2 downto 0);
@@ -41,7 +41,7 @@ architecture structural of add_sub is
     
 begin
     -- Input synchronizers
-    sync_a: entity work.synchronizer_3bit
+    sync_a : entity work.synchronizer_3bit
         port map (
             clk => clk,
             reset => reset,
@@ -49,7 +49,7 @@ begin
             sync_out => a_sync
         );
         
-    sync_b: entity work.synchronizer_3bit
+    sync_b : entity work.synchronizer_3bit
         port map (
             clk => clk,
             reset => reset,
@@ -58,7 +58,7 @@ begin
         );
     
     -- Button edge detectors
-    add_edge: entity work.rising_edge_synchronizer
+    add_edge : entity work.rising_edge_synchronizer
         port map (
             clk => clk,
             reset => reset,
@@ -66,7 +66,7 @@ begin
             output => add_btn_edge
         );
         
-    sub_edge: entity work.rising_edge_synchronizer
+    sub_edge : entity work.rising_edge_synchronizer
         port map (
             clk => clk,
             reset => reset,
@@ -91,15 +91,15 @@ begin
     mode <= mode_reg;
     
     -- Add/Subtract unit
-    add_sub_unit: entity work.generic_add_sub
+    add_sub_unit : entity work.generic_add_sub
         generic map (
             WIDTH => 3
         )
         port map (
             a => a_sync,
             b => b_sync,
-            mode => mode,
-            result => result
+            flag => mode,
+            c => result
         );
     
     -- Prepare display values (zero-extend 3-bit inputs to 4-bit)
@@ -125,4 +125,4 @@ begin
             seg => result_bcd
         );
 
-end architecture structural;
+end top;
