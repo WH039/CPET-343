@@ -1,0 +1,120 @@
+------------------------------------
+-- Weicheng Huang                 --
+-- top level adder and subtractor --
+------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity add_sub is
+    port (
+        clk         : in std_logic;
+        reset       : in std_logic;
+        a_b_input   : in std_logic_vector(7 downto 0);
+        btn   : in std_logic;
+        state       : out std_logic_vector(3 downto 0);
+        hex_one     : out std_logic_vector(6 downto 0);
+        hex_two     : out std_logic_vector(6 downto 0);
+        hex_three   : out std_logic_vector(6 downto 0)
+    );
+end entity add_sub;
+
+architecture top of add_sub is
+    -- Input signals
+    signal a_input  : std_logic_vector(7 downto 0);
+    signal b_input  : std_logic_vector(7 downto 0);
+
+    -- Synchronized signals
+    signal a_sync   : std_logic_vector(7 downto 0);
+    signal b_sync   : std_logic_vector(7 downto 0);
+    signal btn_edge : std_logic;
+    
+    -- Add/Sub unit signals
+    signal result   : std_logic_vector(8 downto 0);
+    signal s_state  : std_logic_vector(3 downto 0);
+    signal s_flag   : std_logic;
+    
+
+
+begin
+    state <= s_state;
+
+    a_input <= std_logic_vector(resize(unsigned(a_b_input),a_input'length)) when s_state(0) = '1';
+    b_input <= std_logic_Vector(resize(unsigned(a_b_input),b_input'length)) when s_state(1) = '1';
+    
+    -- Input synchronizers
+    sync_a : entity work.synchronizer_8bit
+        port map (
+            clk => clk,
+            reset => reset,
+            async_in => a_input,
+            sync_out => a_sync
+        );
+        
+    sync_b : entity work.synchronizer_8bit
+        port map (
+            clk => clk,
+            reset => reset,
+            async_in => b_input,
+            sync_out => b_sync
+        );
+    
+    -- Button edge detectors
+    cycle_edge : entity work.rising_edge_synchronizer
+        port map (
+            clk => clk,
+            reset => reset,
+            input => btn,
+            edge => btn_edge
+        );
+    
+    add_sub_state : process(s_state)
+    begin    
+        if s_state(2) = '1' then 
+            s_flag <= '0';
+        elsif s_state(3) = '1' then 
+            s_flag <= '1';
+        end if;
+    end process;
+
+    -- Add/Subtract unit
+    math_comp : entity work.generic_add_sub
+        generic map(
+            bits => 8
+        )
+        port map(
+            CLK      => CLK,
+            RESET    => RESET,
+            A_SYNC   => a_sync,
+            B_SYNC   => b_sync,
+            STATE    => s_state,
+            RESULT   => result
+        );
+
+    -- State Machine
+    states : entity work.ctrl_stm
+        port map(
+            CLK    => CLK,
+            RST    => RESET,
+            BUTTON => btn_edge,
+            STATE  => s_state
+        );
+
+    -- Seven segment displays
+    result_display : entity work.seven_segment_full
+        generic map(
+        	bits => 8
+        )
+        port map(
+            RESET     => RESET,
+            STATE     => s_state,
+            A_BCD     => a_sync,
+            B_BCD     => b_sync,
+            BCD       => result,
+            HEX_ONE   => HEX_ONE,
+            HEX_TWO   => HEX_TWO,
+            HEX_THREE => HEX_THREE
+        );
+
+end top;

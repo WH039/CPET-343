@@ -1,0 +1,133 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'ctrl_stm:states|STATE[2]'
+Slack : -6.268
+TNS   : -53.323
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -3.104
+TNS   : -73.818
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : -2.996
+TNS   : -8.848
+
+Type  : Slow 1100mV 85C Model Hold 'ctrl_stm:states|STATE[2]'
+Slack : 3.486
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -23.535
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'ctrl_stm:states|STATE[1]'
+Slack : 0.410
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'ctrl_stm:states|STATE[2]'
+Slack : 0.411
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'ctrl_stm:states|STATE[0]'
+Slack : 0.421
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'ctrl_stm:states|STATE[2]'
+Slack : -6.517
+TNS   : -54.963
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -2.689
+TNS   : -63.235
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -3.070
+TNS   : -9.075
+
+Type  : Slow 1100mV 0C Model Hold 'ctrl_stm:states|STATE[2]'
+Slack : 3.534
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -25.377
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'ctrl_stm:states|STATE[2]'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'ctrl_stm:states|STATE[0]'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'ctrl_stm:states|STATE[1]'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'ctrl_stm:states|STATE[2]'
+Slack : -3.144
+TNS   : -26.768
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -2.292
+TNS   : -58.458
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : -1.471
+TNS   : -4.337
+
+Type  : Fast 1100mV 85C Model Hold 'ctrl_stm:states|STATE[2]'
+Slack : 2.125
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.095
+TNS   : -4.081
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'ctrl_stm:states|STATE[2]'
+Slack : 0.442
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'ctrl_stm:states|STATE[1]'
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'ctrl_stm:states|STATE[0]'
+Slack : 0.460
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'ctrl_stm:states|STATE[2]'
+Slack : -3.018
+TNS   : -25.806
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -1.755
+TNS   : -44.149
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : -1.450
+TNS   : -4.275
+
+Type  : Fast 1100mV 0C Model Hold 'ctrl_stm:states|STATE[2]'
+Slack : 2.087
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.092
+TNS   : -3.973
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'ctrl_stm:states|STATE[2]'
+Slack : 0.458
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'ctrl_stm:states|STATE[1]'
+Slack : 0.459
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'ctrl_stm:states|STATE[0]'
+Slack : 0.477
+TNS   : 0.000
+
+------------------------------------------------------------
