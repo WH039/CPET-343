@@ -1,0 +1,611 @@
+# do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:02:01 on Oct 20,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/rising_edge_synchronizer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_synchronizer
+# -- Compiling architecture beh of rising_edge_synchronizer
+# End time: 14:02:01 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:02:01 on Oct 20,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/synchronizer_8bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_8bit
+# -- Compiling architecture behavioral of synchronizer_8bit
+# End time: 14:02:01 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:02:01 on Oct 20,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu
+# -- Compiling architecture beh of alu
+# End time: 14:02:01 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:02:01 on Oct 20,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/double_dabble.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity double_dabble
+# -- Compiling architecture beh of double_dabble
+# End time: 14:02:01 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:02:01 on Oct 20,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture beh of memory
+# End time: 14:02:01 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:02:01 on Oct 20,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/seven_segment.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_segment
+# -- Compiling architecture beh of seven_segment
+# End time: 14:02:01 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:02:01 on Oct 20,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/components.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package components
+# End time: 14:02:01 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:02:01 on Oct 20,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/calculator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity calculator
+# -- Compiling architecture beh of calculator
+# End time: 14:02:01 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:02:01 on Oct 20,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package components
+# -- Compiling entity top
+# -- Compiling architecture struc of top
+# End time: 14:02:01 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:02:01 on Oct 20,2025
+# vcom -reportprogress 300 -2008 -work work ../src/calculator_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package components
+# -- Compiling entity calculator_tb
+# -- Compiling architecture testbench of calculator_tb
+# End time: 14:02:01 on Oct 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" calculator_tb 
+# Start time: 14:02:01 on Oct 20,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.components
+# Loading work.calculator_tb(testbench)
+# Loading work.top(struc)
+# Loading work.rising_edge_synchronizer(beh)
+# Loading work.synchronizer_8bit(behavioral)
+# Loading work.calculator(beh)
+# Loading work.memory(beh)
+# Loading work.alu(beh)
+# Loading work.double_dabble(beh)
+# Loading work.seven_segment(beh)
+# ** Note: Starting Calculator Test Bench
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/calc_inst/mem_inst
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Note: Time: 110000 ps | LEDs: 1 | Op: 0 | Switches: 0
+#    Time: 110 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 130000 ps | LEDs: 1 | Op: 0 | Switches: 0
+#    Time: 130 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 150000 ps | LEDs: 1 | Op: 0 | Switches: 0
+#    Time: 150 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 170000 ps | LEDs: 1 | Op: 0 | Switches: 0
+#    Time: 170 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 190000 ps | LEDs: 1 | Op: 0 | Switches: 0
+#    Time: 190 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Test 1: Multiply 4 by 8
+#    Time: 190 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 210000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 210 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 230000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 230 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 250000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 250 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 270000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 270 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 290000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 290 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 310000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 310 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 330000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 330 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 350000 ps | LEDs: 2 | Op: 2 | Switches: 4
+#    Time: 350 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 370000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 370 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 390000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 390 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 410000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 410 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 430000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 430 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 450000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 450 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 470000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 470 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 490000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 490 ns  Iteration: 0  Instance: /calculator_tb
+add wave -position end sim:/calculator_tb/uut/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/a9284/Documents/GitHub/CPET-343/Lab6/toPost/sim/script/wave.do
+restart
+run -all
+# ** Note: Starting Calculator Test Bench
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/calc_inst/mem_inst
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
+# ** Note: Time: 110000 ps | LEDs: 1 | Op: 0 | Switches: 0
+#    Time: 110 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 130000 ps | LEDs: 1 | Op: 0 | Switches: 0
+#    Time: 130 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 150000 ps | LEDs: 1 | Op: 0 | Switches: 0
+#    Time: 150 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 170000 ps | LEDs: 1 | Op: 0 | Switches: 0
+#    Time: 170 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 190000 ps | LEDs: 1 | Op: 0 | Switches: 0
+#    Time: 190 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Test 1: Multiply 4 by 8
+#    Time: 190 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 210000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 210 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 230000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 230 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 250000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 250 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 270000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 270 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 290000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 290 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 310000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 310 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 330000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 330 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 350000 ps | LEDs: 2 | Op: 2 | Switches: 4
+#    Time: 350 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 370000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 370 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 390000 ps | LEDs: 1 | Op: 2 | Switches: 4
+#    Time: 390 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 410000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 410 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 430000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 430 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 450000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 450 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 470000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 470 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 490000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 490 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 510000 ps | LEDs: 2 | Op: 2 | Switches: 8
+#    Time: 510 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 530000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 530 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 550000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 550 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 570000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 570 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 590000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 590 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 610000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 610 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 630000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 630 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 650000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 650 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 670000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 670 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 690000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 690 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Operation: 4 * 8 = 32 | Expected: 32
+#    Time: 690 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Test 2: Save result (32) to memory
+#    Time: 690 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 710000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 710 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 730000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 730 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 750000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 750 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 770000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 770 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 790000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 790 ns  Iteration: 0  Instance: /calculator_tb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 790 ns  Iteration: 1  Instance: /calculator_tb/uut/calc_inst/mem_inst
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 810 ns  Iteration: 0  Instance: /calculator_tb/uut/calc_inst/mem_inst
+# ** Note: Time: 810000 ps | LEDs: 4 | Op: 2 | Switches: 8
+#    Time: 810 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 830000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 830 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 850000 ps | LEDs: 1 | Op: 2 | Switches: 8
+#    Time: 850 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Test 3: Subtract 8 from current value
+#    Time: 850 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 870000 ps | LEDs: 1 | Op: 1 | Switches: 8
+#    Time: 870 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 890000 ps | LEDs: 1 | Op: 1 | Switches: 8
+#    Time: 890 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 910000 ps | LEDs: 1 | Op: 1 | Switches: 8
+#    Time: 910 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 930000 ps | LEDs: 1 | Op: 1 | Switches: 8
+#    Time: 930 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 950000 ps | LEDs: 1 | Op: 1 | Switches: 8
+#    Time: 950 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 970000 ps | LEDs: 2 | Op: 1 | Switches: 8
+#    Time: 970 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 990000 ps | LEDs: 1 | Op: 1 | Switches: 8
+#    Time: 990 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1010000 ps | LEDs: 1 | Op: 1 | Switches: 8
+#    Time: 1010 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1030000 ps | LEDs: 1 | Op: 1 | Switches: 8
+#    Time: 1030 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1050000 ps | LEDs: 1 | Op: 1 | Switches: 8
+#    Time: 1050 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1070000 ps | LEDs: 1 | Op: 1 | Switches: 8
+#    Time: 1070 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1090000 ps | LEDs: 1 | Op: 1 | Switches: 8
+#    Time: 1090 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1110000 ps | LEDs: 1 | Op: 1 | Switches: 8
+#    Time: 1110 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1130000 ps | LEDs: 1 | Op: 1 | Switches: 8
+#    Time: 1130 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1150000 ps | LEDs: 1 | Op: 1 | Switches: 8
+#    Time: 1150 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Operation: 32 - 8 = 24 | Expected: 24
+#    Time: 1150 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Test 4: Divide 24 by 2
+#    Time: 1150 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1170000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1170 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1190000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1190 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1210000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1210 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1230000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1230 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1250000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1250 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1270000 ps | LEDs: 2 | Op: 3 | Switches: 2
+#    Time: 1270 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1290000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1290 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1310000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1310 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1330000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1330 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1350000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1350 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1370000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1370 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1390000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1390 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1410000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1410 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1430000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1430 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1450000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1450 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Operation: 24 / 2 = 12 | Expected: 12
+#    Time: 1450 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Test 5: Load saved number (32) from memory
+#    Time: 1450 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1470000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1470 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1490000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1490 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1510000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1510 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1530000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1530 ns  Iteration: 0  Instance: /calculator_tb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1530 ns  Iteration: 2  Instance: /calculator_tb/uut/calc_inst/mem_inst
+# ** Note: Time: 1550000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1550 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1570000 ps | LEDs: 8 | Op: 3 | Switches: 2
+#    Time: 1570 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1590000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1590 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1610000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1610 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1630000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1630 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1650000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1650 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1670000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1670 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1690000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1690 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1710000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1710 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1730000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1730 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1750000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1750 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Operation: Memory recall should give 32 | Expected: 32
+#    Time: 1750 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Test 6: Divide saved number (32) by 2
+#    Time: 1750 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1770000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1770 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1790000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1790 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1810000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1810 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1830000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1830 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1850000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1850 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1870000 ps | LEDs: 2 | Op: 3 | Switches: 2
+#    Time: 1870 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1890000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1890 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1910000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1910 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1930000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1930 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1950000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1950 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1970000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1970 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 1990000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 1990 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2010000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2010 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2030000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2030 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2050000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2050 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Operation: 32 / 2 = 16 | Expected: 16
+#    Time: 2050 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2070000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2070 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2090000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2090 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2110000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2110 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2130000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2130 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2150000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2150 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2170000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2170 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2190000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2190 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2210000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2210 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2230000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2230 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2250000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2250 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2270000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2270 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2290000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2290 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2310000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2310 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2330000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2330 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2350000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2350 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2370000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2370 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2390000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2390 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2410000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2410 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2430000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2430 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: Time: 2450000 ps | LEDs: 1 | Op: 3 | Switches: 2
+#    Time: 2450 ns  Iteration: 0  Instance: /calculator_tb
+# ** Note: All test sequences completed successfully!
+#    Time: 2450 ns  Iteration: 0  Instance: /calculator_tb
+# End time: 14:04:28 on Oct 20,2025, Elapsed time: 0:02:27
+# Errors: 0, Warnings: 87
