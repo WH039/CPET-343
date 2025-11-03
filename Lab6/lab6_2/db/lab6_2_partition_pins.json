@@ -1,0 +1,173 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "RESULT_HEX_ONE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_ONE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_ONE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_ONE[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_ONE[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_ONE[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_ONE[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_TWO[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_TWO[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_TWO[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_TWO[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_TWO[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_TWO[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_TWO[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_THREE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_THREE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_THREE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_THREE[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_THREE[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_THREE[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_THREE[6]",
+					"strict" : false
+				},
+				{
+					"name" : "STATE_LED[0]",
+					"strict" : false
+				},
+				{
+					"name" : "STATE_LED[1]",
+					"strict" : false
+				},
+				{
+					"name" : "STATE_LED[2]",
+					"strict" : false
+				},
+				{
+					"name" : "STATE_LED[3]",
+					"strict" : false
+				},
+				{
+					"name" : "STATE_LED[4]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "OPERATOR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OPERATOR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B_INPUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "B_INPUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "B_INPUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "B_INPUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B_INPUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B_INPUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B_INPUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B_INPUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "EXEC",
+					"strict" : false
+				},
+				{
+					"name" : "MS",
+					"strict" : false
+				},
+				{
+					"name" : "MR",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

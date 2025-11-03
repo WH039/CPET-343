@@ -1,0 +1,9 @@
+
+State Machine - |top|calculator:calc_inst|current_state
+Name current_state.DISPLAY_RESULT current_state.LOAD_MEM current_state.SAVE_MEM current_state.EXECUTE_OP current_state.WAIT_INPUT current_state.IDLE 
+current_state.IDLE 0 0 0 0 0 0 
+current_state.WAIT_INPUT 0 0 0 0 1 1 
+current_state.EXECUTE_OP 0 0 0 1 0 1 
+current_state.SAVE_MEM 0 0 1 0 0 1 
+current_state.LOAD_MEM 0 1 0 0 0 1 
+current_state.DISPLAY_RESULT 1 0 0 0 0 1 

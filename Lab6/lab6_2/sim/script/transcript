@@ -1,0 +1,158 @@
+# do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:42 on Nov 03,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/components_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package components_pkg
+# End time: 13:39:42 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:42 on Nov 03,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/rising_edge_synchronizer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_synchronizer
+# -- Compiling architecture beh of rising_edge_synchronizer
+# End time: 13:39:42 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:42 on Nov 03,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/sync_bits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sync_bits
+# -- Compiling architecture beh of sync_bits
+# End time: 13:39:42 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:42 on Nov 03,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu
+# -- Compiling architecture beh of alu
+# End time: 13:39:42 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:42 on Nov 03,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture beh of memory
+# End time: 13:39:42 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:42 on Nov 03,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/seven_segment_full.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity seven_segment_full
+# -- Compiling architecture beh of seven_segment_full
+# End time: 13:39:42 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:42 on Nov 03,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/addr_ctrl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity addr_ctrl
+# -- Compiling architecture beh of addr_ctrl
+# End time: 13:39:42 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:42 on Nov 03,2025
+# vcom -reportprogress 300 -2008 -work work ../../src/math_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package components_pkg
+# -- Compiling entity math_top
+# -- Compiling architecture top of math_top
+# -- Loading entity sync_bits
+# -- Loading entity rising_edge_synchronizer
+# -- Loading entity alu
+# -- Loading entity memory
+# -- Loading entity addr_ctrl
+# -- Loading entity seven_segment_full
+# End time: 13:39:42 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:42 on Nov 03,2025
+# vcom -reportprogress 300 -2008 -work work ../src/math_top_tb2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity math_top_tb2
+# -- Compiling architecture testbench of math_top_tb2
+# End time: 13:39:42 on Nov 03,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" math_top_tb2 
+# Start time: 13:39:42 on Nov 03,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.math_top_tb2(testbench)
+# Loading work.components_pkg
+# Loading work.math_top(top)
+# Loading work.sync_bits(beh)
+# Loading work.rising_edge_synchronizer(beh)
+# Loading work.alu(beh)
+# Loading work.memory(beh)
+# Loading work.addr_ctrl(beh)
+# Loading work.seven_segment_full(beh)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /math_top_tb2/uut/ram_mem
+# ** Note: Step 1: Loading initial value 4 into working register
+#    Time: 40 ns  Iteration: 0  Instance: /math_top_tb2
+# ** Note: Step 2: Multiplying 4 * 8 = 32
+#    Time: 100 ns  Iteration: 0  Instance: /math_top_tb2
+# ** Note: Multiplication operation completed
+#    Time: 105 ns  Iteration: 0  Instance: /math_top_tb2
+# ** Note: Step 3: Saving result 32 to memory
+#    Time: 160 ns  Iteration: 0  Instance: /math_top_tb2
+# ** Note: Value saved to memory
+#    Time: 205 ns  Iteration: 0  Instance: /math_top_tb2
+# ** Note: Step 4: Dividing 32 / 2 = 16
+#    Time: 210 ns  Iteration: 0  Instance: /math_top_tb2
+# ** Note: Step 5: Subtracting 16 - 4 = 12
+#    Time: 270 ns  Iteration: 0  Instance: /math_top_tb2
+# ** Note: Step 6: Loading saved value 32 from memory
+#    Time: 330 ns  Iteration: 0  Instance: /math_top_tb2
+# ** Note: Step 7: Adding 32 + 2 = 34
+#    Time: 380 ns  Iteration: 0  Instance: /math_top_tb2
+# ** Note: Test sequence completed successfully!
+#    Time: 440 ns  Iteration: 0  Instance: /math_top_tb2
+# ** Note: Expected final result: 34
+#    Time: 440 ns  Iteration: 0  Instance: /math_top_tb2
+# ** Note: Final operation completed - check seven segment displays for result 34
+#    Time: 445 ns  Iteration: 0  Instance: /math_top_tb2
+# ** Note: Final operation completed - check seven segment displays for result 34
+#    Time: 455 ns  Iteration: 0  Instance: /math_top_tb2
+# ** Note: Final operation completed - check seven segment displays for result 34
+#    Time: 465 ns  Iteration: 0  Instance: /math_top_tb2
+# ** Note: Final operation completed - check seven segment displays for result 34
+#    Time: 475 ns  Iteration: 0  Instance: /math_top_tb2
+# ** Note: Final operation completed - check seven segment displays for result 34
+#    Time: 485 ns  Iteration: 0  Instance: /math_top_tb2
+# ** Note: Final operation completed - check seven segment displays for result 34
+#    Time: 495 ns  Iteration: 0  Instance: /math_top_tb2
+# End time: 13:59:25 on Nov 03,2025, Elapsed time: 0:19:43
+# Errors: 0, Warnings: 1

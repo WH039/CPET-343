@@ -19,29 +19,17 @@ radix define States {
     -default default
 }
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /calculator_tb/uut/clk
-add wave -noupdate /calculator_tb/uut/reset_n
-add wave -noupdate /calculator_tb/uut/execute
-add wave -noupdate /calculator_tb/uut/ms
-add wave -noupdate /calculator_tb/uut/mr
-add wave -noupdate /calculator_tb/uut/switch
-add wave -noupdate /calculator_tb/uut/op
-add wave -noupdate /calculator_tb/uut/led
-add wave -noupdate /calculator_tb/uut/bcd_0
-add wave -noupdate /calculator_tb/uut/bcd_1
-add wave -noupdate /calculator_tb/uut/bcd_2
-add wave -noupdate /calculator_tb/uut/reset
-add wave -noupdate /calculator_tb/uut/sync_execute
-add wave -noupdate /calculator_tb/uut/sync_ms
-add wave -noupdate /calculator_tb/uut/sync_mr
-add wave -noupdate /calculator_tb/uut/sync_switch
-add wave -noupdate /calculator_tb/uut/sync_op
-add wave -noupdate /calculator_tb/uut/calc_result
-add wave -noupdate /calculator_tb/uut/state_led
-add wave -noupdate /calculator_tb/uut/ones
-add wave -noupdate /calculator_tb/uut/tens
-add wave -noupdate /calculator_tb/uut/hundreds
-add wave -noupdate /calculator_tb/uut/result_padded
+add wave -noupdate /calculator_tb/clk
+add wave -noupdate /calculator_tb/reset_n
+add wave -noupdate /calculator_tb/execute
+add wave -noupdate /calculator_tb/ms
+add wave -noupdate /calculator_tb/mr
+add wave -noupdate /calculator_tb/switch
+add wave -noupdate /calculator_tb/op
+add wave -noupdate /calculator_tb/led
+add wave -noupdate /calculator_tb/bcd_0
+add wave -noupdate /calculator_tb/bcd_1
+add wave -noupdate /calculator_tb/bcd_2
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {129522 ps} 0}
 quietly wave cursor active 1

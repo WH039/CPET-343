@@ -1,27 +1,27 @@
 # do sim.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:26:46 on Oct 27,2025
+# Start time: 14:27:48 on Oct 27,2025
 # vcom -reportprogress 300 -2008 -work work ../../src/rising_edge_synchronizer.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity rising_edge_synchronizer
-# -- Compiling architecture beh of rising_edge_synchronizer
-# End time: 10:26:46 on Oct 27,2025, Elapsed time: 0:00:00
+# -- Compiling architecture behavioral of rising_edge_synchronizer
+# End time: 14:27:48 on Oct 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:26:46 on Oct 27,2025
+# Start time: 14:27:48 on Oct 27,2025
 # vcom -reportprogress 300 -2008 -work work ../../src/synchronizer_8bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity synchronizer_8bit
 # -- Compiling architecture behavioral of synchronizer_8bit
-# End time: 10:26:46 on Oct 27,2025, Elapsed time: 0:00:00
+# End time: 14:27:48 on Oct 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:26:46 on Oct 27,2025
+# Start time: 14:27:48 on Oct 27,2025
 # vcom -reportprogress 300 -2008 -work work ../../src/alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -29,10 +29,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity alu
 # -- Compiling architecture beh of alu
-# End time: 10:26:47 on Oct 27,2025, Elapsed time: 0:00:01
+# End time: 14:27:48 on Oct 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:26:47 on Oct 27,2025
+# Start time: 14:27:48 on Oct 27,2025
 # vcom -reportprogress 300 -2008 -work work ../../src/double_dabble.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -40,51 +40,54 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity double_dabble
 # -- Compiling architecture beh of double_dabble
-# End time: 10:26:47 on Oct 27,2025, Elapsed time: 0:00:00
+# End time: 14:27:48 on Oct 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:26:47 on Oct 27,2025
+# Start time: 14:27:48 on Oct 27,2025
 # vcom -reportprogress 300 -2008 -work work ../../src/memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity memory
-# -- Compiling architecture beh of memory
-# End time: 10:26:47 on Oct 27,2025, Elapsed time: 0:00:00
+# -- Compiling architecture behavioral of memory
+# End time: 14:27:48 on Oct 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:26:47 on Oct 27,2025
+# Start time: 14:27:49 on Oct 27,2025
 # vcom -reportprogress 300 -2008 -work work ../../src/seven_segment.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity seven_segment
 # -- Compiling architecture beh of seven_segment
-# End time: 10:26:47 on Oct 27,2025, Elapsed time: 0:00:00
+# End time: 14:27:49 on Oct 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:26:47 on Oct 27,2025
+# Start time: 14:27:49 on Oct 27,2025
 # vcom -reportprogress 300 -2008 -work work ../../src/components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling package components
-# End time: 10:26:47 on Oct 27,2025, Elapsed time: 0:00:00
+# End time: 14:27:49 on Oct 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:26:47 on Oct 27,2025
+# Start time: 14:27:49 on Oct 27,2025
 # vcom -reportprogress 300 -2008 -work work ../../src/calculator.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity calculator
-# -- Compiling architecture beh of calculator
-# End time: 10:26:47 on Oct 27,2025, Elapsed time: 0:00:00
+# -- Compiling architecture behavioral of calculator
+# -- Loading entity rising_edge_synchronizer
+# -- Loading entity memory
+# -- Loading entity alu
+# End time: 14:27:49 on Oct 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:26:47 on Oct 27,2025
+# Start time: 14:27:49 on Oct 27,2025
 # vcom -reportprogress 300 -2008 -work work ../../src/top.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -92,164 +95,41 @@
 # -- Loading package NUMERIC_STD
 # -- Loading package components
 # -- Compiling entity top
-# -- Compiling architecture struc of top
-# End time: 10:26:47 on Oct 27,2025, Elapsed time: 0:00:00
+# -- Compiling architecture structural of top
+# End time: 14:27:49 on Oct 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:26:47 on Oct 27,2025
+# Start time: 14:27:49 on Oct 27,2025
 # vcom -reportprogress 300 -2008 -work work ../src/calculator_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Loading package components
 # -- Compiling entity calculator_tb
-# -- Compiling architecture testbench of calculator_tb
-# End time: 10:26:47 on Oct 27,2025, Elapsed time: 0:00:00
+# -- Compiling architecture tb of calculator_tb
+# End time: 14:27:49 on Oct 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" calculator_tb 
-# Start time: 10:26:49 on Oct 27,2025
+# Start time: 14:27:49 on Oct 27,2025
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
+# Loading work.calculator_tb(tb)
 # Loading work.components
-# Loading work.calculator_tb(testbench)
-# Loading work.top(struc)
-# Loading work.rising_edge_synchronizer(beh)
+# Loading work.top(structural)
 # Loading work.synchronizer_8bit(behavioral)
-# Loading work.calculator(beh)
-# Loading work.memory(beh)
+# Loading work.calculator(behavioral)
+# Loading work.rising_edge_synchronizer(behavioral)
+# Loading work.memory(behavioral)
 # Loading work.alu(beh)
-# Loading work.double_dabble(beh)
-# Loading work.seven_segment(beh)
-# ** Note: Starting Calculator Test Bench
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/uut/calc_inst/mem_inst
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 4  Instance: /calculator_tb/uut/bcd_conv
-# ** Note: Time: 110000 ps | LEDs: 1 | Op: 0 | Switches: 0
-#    Time: 110 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 130000 ps | LEDs: 1 | Op: 0 | Switches: 0
-#    Time: 130 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 150000 ps | LEDs: 1 | Op: 0 | Switches: 0
-#    Time: 150 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 170000 ps | LEDs: 1 | Op: 0 | Switches: 0
-#    Time: 170 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 190000 ps | LEDs: 1 | Op: 0 | Switches: 0
-#    Time: 190 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Test 1: Multiply 4 by 8
-#    Time: 190 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 210000 ps | LEDs: 1 | Op: 2 | Switches: 4
-#    Time: 210 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 230000 ps | LEDs: 1 | Op: 2 | Switches: 4
-#    Time: 230 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 250000 ps | LEDs: 1 | Op: 2 | Switches: 4
-#    Time: 250 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 270000 ps | LEDs: 1 | Op: 2 | Switches: 4
-#    Time: 270 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 290000 ps | LEDs: 1 | Op: 2 | Switches: 4
-#    Time: 290 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 310000 ps | LEDs: 1 | Op: 2 | Switches: 4
-#    Time: 310 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 330000 ps | LEDs: 1 | Op: 2 | Switches: 4
-#    Time: 330 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 350000 ps | LEDs: 2 | Op: 2 | Switches: 4
-#    Time: 350 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 370000 ps | LEDs: 1 | Op: 2 | Switches: 4
-#    Time: 370 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 390000 ps | LEDs: 1 | Op: 2 | Switches: 4
-#    Time: 390 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 410000 ps | LEDs: 1 | Op: 2 | Switches: 8
-#    Time: 410 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 430000 ps | LEDs: 1 | Op: 2 | Switches: 8
-#    Time: 430 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 450000 ps | LEDs: 1 | Op: 2 | Switches: 8
-#    Time: 450 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 470000 ps | LEDs: 1 | Op: 2 | Switches: 8
-#    Time: 470 ns  Iteration: 0  Instance: /calculator_tb
-# ** Note: Time: 490000 ps | LEDs: 1 | Op: 2 | Switches: 8
-#    Time: 490 ns  Iteration: 0  Instance: /calculator_tb
-# End time: 10:28:07 on Oct 27,2025, Elapsed time: 0:01:18
-# Errors: 0, Warnings: 42
+# Loading work.seven_seg(beh)
+# ** Fatal: (vsim-3817) Port "bcd" of entity "seven_seg" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /calculator_tb/dut/seg_ones File: ../../src/seven_seg.vhd Line: 10
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./sim.do PAUSED at line 12
+# End time: 14:28:18 on Oct 27,2025, Elapsed time: 0:00:29
+# Errors: 1, Warnings: 0

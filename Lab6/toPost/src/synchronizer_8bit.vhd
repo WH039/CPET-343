@@ -1,6 +1,6 @@
 ------------------------------
--- Weicheng Huang            
--- syncrhonizer_3bit.vhd     
+-- Kohl Carpenter            --
+-- synchronizer_8bit.vhd     --
 ------------------------------
 
 library ieee;
@@ -8,10 +8,10 @@ use ieee.std_logic_1164.all;
 
 entity synchronizer_8bit is
     port (
-        clk     : in std_logic;
-        reset   : in std_logic;
-        async_in : in std_logic_vector(7 downto 0);
-        sync_out : out std_logic_vector(7 downto 0)
+        clk       : in std_logic;
+        reset     : in std_logic;
+        async_in  : in std_logic_vector(7 downto 0);
+        sync_out  : out std_logic_vector(7 downto 0)
     );
 end entity synchronizer_8bit;
 
@@ -28,4 +28,4 @@ begin
     end process;
     
     sync_out <= sync_reg;
-end behavioral;
+end architecture behavioral;

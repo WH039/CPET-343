@@ -1,45 +1,37 @@
--------------------------------------------------------------------------------
--- Dr. Kaputa
--- rising edge synchronizer
--------------------------------------------------------------------------------
+------------------------------
+-- Kohl Carpenter           --
+-- rising edge synchronizer --
+------------------------------
+
 library ieee;
-use ieee.std_logic_1164.all;      
+use ieee.std_logic_1164.all;
 
-entity rising_edge_synchronizer is 
-  port (
-    clk               : in std_logic;
-    reset             : in std_logic;
-    input             : in std_logic;
-    edge              : out std_logic
-  );
-end rising_edge_synchronizer;
+entity rising_edge_synchronizer is
+    port (
+        clk     : in std_logic;
+        reset   : in std_logic;
+        input   : in std_logic;
+        output  : out std_logic
+    );
+end entity rising_edge_synchronizer;
 
-architecture beh of rising_edge_synchronizer is
--- signal declarations
-signal input_z     : std_logic;
-signal input_zz    : std_logic;
-signal input_zzz   : std_logic;
-
-begin 
-synchronizer: process(reset,clk,input)
-  begin
-    if reset = '1' then
-      input_z     <= '1';
-      input_zz    <= '1';
-    elsif rising_edge(clk) then
-      input_z   <= input;
-      input_zz  <= input_z;
-    end if;
-end process;  
-
-rising_edge_detector: process(reset,clk,input_zz)
-  begin
-    if reset = '1' then
-      edge        <= '0';
-      input_zzz   <= '1';
-    elsif rising_edge(clk) then
-      input_zzz   <= input_zz;
-      edge <= (input_zz xor input_zzz) and input_zz;
-    end if;
-end process;  
-end beh; 
+architecture behavioral of rising_edge_synchronizer is
+    -- sync registers
+    signal input_sync : std_logic;
+    signal input_prev : std_logic;
+begin
+    process(clk, reset)
+    begin
+        if reset = '1' then
+            input_sync <= '0';
+            input_prev <= '0';
+        elsif rising_edge(clk) then
+            -- shift through sync stages
+            input_sync <= input;
+            input_prev <= input_sync;
+        end if;
+    end process;
+    
+    -- detect rising edge
+    output <= input_sync and not input_prev;
+end architecture behavioral;
