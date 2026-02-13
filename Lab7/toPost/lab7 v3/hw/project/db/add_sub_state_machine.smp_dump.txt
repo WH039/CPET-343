@@ -1,0 +1,7 @@
+
+State Machine - |add_sub|ctrl_stm:states|cur_st
+Name cur_st.DISP_DIF cur_st.DISP_SUM cur_st.INPUT_B cur_st.IDLE 
+cur_st.IDLE 0 0 0 0 
+cur_st.INPUT_B 0 0 1 1 
+cur_st.DISP_SUM 0 1 0 1 
+cur_st.DISP_DIF 1 0 0 1 

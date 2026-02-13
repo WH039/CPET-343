@@ -1,0 +1,125 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "RESULT_HEX_ONE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_ONE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_ONE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_ONE[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_ONE[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_ONE[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_ONE[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_TWO[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_TWO[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_TWO[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_TWO[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_TWO[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_TWO[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_TWO[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_THREE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_THREE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_THREE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_THREE[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_THREE[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_THREE[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT_HEX_THREE[6]",
+					"strict" : false
+				},
+				{
+					"name" : "STATE_LED[0]",
+					"strict" : false
+				},
+				{
+					"name" : "STATE_LED[1]",
+					"strict" : false
+				},
+				{
+					"name" : "STATE_LED[2]",
+					"strict" : false
+				},
+				{
+					"name" : "STATE_LED[3]",
+					"strict" : false
+				},
+				{
+					"name" : "STATE_LED[4]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "EXEC",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

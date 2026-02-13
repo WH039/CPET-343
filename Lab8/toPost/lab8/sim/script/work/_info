@@ -1,0 +1,250 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/a9284/Documents/GitHub/CPET-343/Lab8/toPost/lab8/sim/script
+Edj_roomba_3000
+Z1 w1765212643
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8../../src/dj_roomba_3000.vhd
+Z6 F../../src/dj_roomba_3000.vhd
+l0
+L8
+Vn=5oc7:B<R]XbjnWciYk:2
+!s100 GM3[DB:gnT:9cflc5I]710
+Z7 OV;C;10.5b;63
+33
+Z8 !s110 1765219862
+!i10b 1
+Z9 !s108 1765219862.000000
+Z10 !s90 -reportprogress|300|-2008|-work|work|../../src/dj_roomba_3000.vhd|
+Z11 !s107 ../../src/dj_roomba_3000.vhd|
+!i113 1
+Z12 o-2008 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abeh
+R2
+R3
+R4
+DEx4 work 14 dj_roomba_3000 0 22 n=5oc7:B<R]XbjnWciYk:2
+l66
+L19
+Vn<^LRmT@Un`idXVSYG57_2
+!s100 ?b_CoZo=bEL?ShO[a]QUN3
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Edj_roomba_3000_tb
+Z14 w1765219841
+R2
+R3
+R4
+R0
+Z15 8../src/dj_roomba_3000_tb.vhd
+Z16 F../src/dj_roomba_3000_tb.vhd
+l0
+L9
+V7]iTRAA2NHB[9:nE@m>ee0
+!s100 A`=239<Y4BYFM?lMMLkQk2
+R7
+33
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-2008|-work|work|../src/dj_roomba_3000_tb.vhd|
+Z18 !s107 ../src/dj_roomba_3000_tb.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+R4
+Z19 DEx4 work 17 dj_roomba_3000_tb 0 22 7]iTRAA2NHB[9:nE@m>ee0
+l42
+L12
+Vi3o9z=mO_BzAQ^RHeK2k:3
+!s100 >QJel`g?g[MV46hMfB9H12
+R7
+33
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Egeneric_counter
+Z20 w1478989127
+R3
+R4
+R0
+Z21 8../../src/generic_counter.vhd
+Z22 F../../src/generic_counter.vhd
+l0
+L8
+V3gQUj1aG1U@fcIZbKCZ:Z1
+!s100 7b[8`GdGkWelKW<fdmT:o0
+R7
+33
+R8
+!i10b 1
+R9
+Z23 !s90 -reportprogress|300|-2008|-work|work|../../src/generic_counter.vhd|
+Z24 !s107 ../../src/generic_counter.vhd|
+!i113 1
+R12
+R13
+Abeh
+R3
+R4
+DEx4 work 15 generic_counter 0 22 3gQUj1aG1U@fcIZbKCZ:Z1
+l23
+L19
+VePBSCHPT@VCnA8ZhDCRVR0
+!s100 z5ik>DVc6W0?c7LPT5hG52
+R7
+33
+R8
+!i10b 1
+R9
+R23
+R24
+!i113 1
+R12
+R13
+Erising_edge_synchronizer
+R20
+R3
+R4
+R0
+Z25 8../../src/rising_edge_synchronizer.vhd
+Z26 F../../src/rising_edge_synchronizer.vhd
+l0
+L8
+VSzT;=mWjCUVO[Zno9c=bk2
+!s100 8>=9Tc6dAVdENebjXiG<30
+R7
+33
+R8
+!i10b 1
+R9
+Z27 !s90 -reportprogress|300|-2008|-work|work|../../src/rising_edge_synchronizer.vhd|
+Z28 !s107 ../../src/rising_edge_synchronizer.vhd|
+!i113 1
+R12
+R13
+Abeh
+R3
+R4
+DEx4 work 24 rising_edge_synchronizer 0 22 SzT;=mWjCUVO[Zno9c=bk2
+l22
+L17
+V?fFQ5h<T1J2bN4aF5i]fH0
+!s100 bl0g6Z13_?2U69Fj`HUc[2
+R7
+33
+R8
+!i10b 1
+R9
+R27
+R28
+!i113 1
+R12
+R13
+Erom_data
+R20
+Z29 DPx9 altera_mf 20 altera_mf_components 0 22 CXY9Un;=_:7^h_<EAaQcW1
+R3
+R4
+R0
+Z30 8../../src/rom_data/rom_data.vhd
+Z31 F../../src/rom_data/rom_data.vhd
+l0
+L43
+VA?28?5lO5>P4_TKBfeahh0
+!s100 3OF@?0zK=gZ@:TQ3ckXiW3
+R7
+33
+R8
+!i10b 1
+R9
+Z32 !s90 -reportprogress|300|-2008|-work|work|../../src/rom_data/rom_data.vhd|
+Z33 !s107 ../../src/rom_data/rom_data.vhd|
+!i113 1
+R12
+R13
+Asyn
+R29
+R3
+R4
+DEx4 work 8 rom_data 0 22 A?28?5lO5>P4_TKBfeahh0
+l57
+L53
+V0GD;5>i_eXko7^c@zSH=D2
+!s100 FWA@ePhK:Fh]O9UQ4m<QH3
+R7
+33
+R8
+!i10b 1
+R9
+R32
+R33
+!i113 1
+R12
+R13
+Erom_instructions
+R20
+R3
+R4
+R0
+Z34 8../../src/rom_instructions/rom_instructions.vhd
+Z35 F../../src/rom_instructions/rom_instructions.vhd
+l0
+L42
+Vc4Pm@XXjf=Y7RW9M1<[`a1
+!s100 gzW;2@`;P`NkEI3ie7>EZ3
+R7
+33
+R8
+!i10b 1
+R9
+Z36 !s90 -reportprogress|300|-2008|-work|work|../../src/rom_instructions/rom_instructions.vhd|
+Z37 !s107 ../../src/rom_instructions/rom_instructions.vhd|
+!i113 1
+R12
+R13
+Asyn
+R3
+R4
+DEx4 work 16 rom_instructions 0 22 c4Pm@XXjf=Y7RW9M1<[`a1
+l82
+L52
+VR<on:D;l@liN^z5Zf0bF80
+!s100 @Y3^M>dFUk5JfjhKHWBU00
+R7
+33
+R8
+!i10b 1
+R9
+R36
+R37
+!i113 1
+R12
+R13

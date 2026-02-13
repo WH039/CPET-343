@@ -1,0 +1,15 @@
+
+State Machine - |top|cur_st
+Name cur_st.ZERO_ST cur_st.READ_ST cur_st.IDLE 
+cur_st.IDLE 0 0 0 
+cur_st.READ_ST 0 1 1 
+cur_st.ZERO_ST 1 0 1 
+
+State Machine - |top|addr_ctrl:ctrl_mem|cur_st
+Name cur_st.HOLD cur_st.READ_S cur_st.WRITE_S cur_st.WRITE_W cur_st.WR_NO_OP cur_st.IDLE 
+cur_st.IDLE 0 0 0 0 0 0 
+cur_st.WR_NO_OP 0 0 0 0 1 1 
+cur_st.WRITE_W 0 0 0 1 0 1 
+cur_st.WRITE_S 0 0 1 0 0 1 
+cur_st.READ_S 0 1 0 0 0 1 
+cur_st.HOLD 1 0 0 0 0 1 
